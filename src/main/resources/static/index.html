@@ -6,26 +6,5 @@
 </head>
 <body>
     <h3> AWS 샘플 배포 테스트 </h3>
-    <form class="boardSaveForm">
-        <input type="text" name="bcontent">
-        <input type="file" name="uploadFile">
-        <button type="button" onclick="boardSave()">등록</button>
-    </form>
-
-    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-        function boardSave(){
-            let boardSaveForm = document.querySelector('.boardSaveForm');
-            let boardSaveFormData = new FormData( boardSaveForm );
-            $.ajax({
-                url : "/board/save",
-                method : 'POST',
-                data : boardSaveFormData ,
-                contentType : false,
-                processData : false ,
-                success : (response) => { alert( response ); }
-            });
-        }
-    </script>
 </body>
 </html>
