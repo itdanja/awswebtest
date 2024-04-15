@@ -9,6 +9,4 @@ import org.springframework.web.multipart.MultipartFile;
 public class BoardDto {
     public String bno;
     public String bcontent;
-    private String bfile;
-    private MultipartFile uploadFile;
 }

@@ -13,5 +13,4 @@ public class BoardEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int bno;
     public String bcontent;
-    private String bfile;
 }
